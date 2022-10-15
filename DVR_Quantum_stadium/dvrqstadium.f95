@@ -5,7 +5,7 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
                                  !-------------------------!
-                                   PROGRAM ddvrHO
+                                   PROGRAM dvrstadium
                                  !-------------------------!
                                         
       implicit none
@@ -25,7 +25,6 @@
       
 !!!!!!!!!!!!!!!!!  grid is from -2.5 to 2.5 with grid spacing 0.025 unit~~~~~~~~~~~
 
-       write(*,*)"jobs starts"
       AC=-1.d0*2.5d0
       n=200
       DX=2*abs(AC)/(n-1)
@@ -113,7 +112,7 @@
 
 !!!!!!!!!!!!!!!  writing energy and eigenvectors ~~~~~~~~~~~~~~~~~~~~~~~
 
-       do i=1,n 
+       do i=1,20 
          write(10,*)EIG(i)
        enddo
 
